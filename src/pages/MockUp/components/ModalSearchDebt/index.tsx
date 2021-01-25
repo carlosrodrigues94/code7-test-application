@@ -34,7 +34,7 @@ const ModalSearchDebt: React.FC<IModalSearchDebt> = ({
     >
       <Card alignItems="center">
         <input
-          placeholder="digite o nome ou id da dívida."
+          placeholder="digite o motivo ou id da dívida."
           value={inputValue}
           onChange={(event) => setInputValue(event.target.value)}
           style={{
