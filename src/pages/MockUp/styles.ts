@@ -3,11 +3,13 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
   width: 100%;
-  height: 100vh;
   align-items: center;
   justify-content: center;
   background: #636e72;
   flex-direction: column;
+  overflow-y:auto;
+  min-height:100vh;
+  padding:16px 0;
 
   section {
     display: flex;
@@ -21,6 +23,7 @@ export const Container = styled.div`
     justify-content: flex-start;
     border-radius: 5px;
     padding: 4px;
+    margin:24px 0;
 
     text-align: start;
 
@@ -52,7 +55,6 @@ export const Form = styled.form`
   font-size: 14px;
   position: relative;
   align-items: center;
-  margin: 0 0 auto 0;
 
   .div-header {
     height: 45px;
