@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
 import Card from '../../../../components/Modals/Card';
 import ModalSimple from '../../../../components/Modals/ModalSimple';
@@ -53,6 +53,13 @@ const ModalCreateDebt: React.FC<IModalCreateDebtProps> = ({
 
     onSubmitSuccess(data);
   }, [value, reason, onSubmitSuccess, user]);
+
+  useEffect(() => {
+    if (isOpen) {
+      setReason('');
+      setValue('');
+    }
+  }, [isOpen]);
 
   return (
     <ModalSimple
