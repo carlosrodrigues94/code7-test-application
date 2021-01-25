@@ -7,42 +7,9 @@ export const Container = styled.div`
   justify-content: center;
   background: #636e72;
   flex-direction: column;
-  overflow-y:auto;
-  min-height:100vh;
-  padding:16px 0;
-
-  section {
-    display: flex;
-    flex-direction: column;
-    margin: 16px 0 auto 0;
-    width: 100%;
-    max-width: 600px;
-    background: var(--tertiary);
-    min-height: 200px;
-    align-items: center;
-    justify-content: flex-start;
-    border-radius: 5px;
-    padding: 4px;
-    margin:24px 0;
-
-    text-align: start;
-
-    div {
-
-    }
-
-    p{
-      margin:4px 0;
-      text-align: start;
-    }
-
-    svg{
-      margin:0 8px 0 0;
-      color:var(--success);
-    }
-
-
-  }
+  overflow-y: auto;
+  min-height: 100vh;
+  padding: 16px 0;
 `;
 
 export const Form = styled.form`
