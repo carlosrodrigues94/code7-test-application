@@ -78,7 +78,7 @@ const ModalCreateDebt: React.FC<IModalCreateDebtProps> = ({
 
       </Card>
       <Card alignItems="center">
-        <strong>Para editar essa dívida, altere os campos abaixo.</strong>
+        <strong>Para cadastrar uma dívida, preencha os campos abaixo.</strong>
 
         <ContentInputs>
           <p>Motivo da Dívida</p>
