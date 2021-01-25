@@ -138,9 +138,9 @@ const MockUp: React.FC = () => {
   /**
    * Execute when user click in cancel inside ModalConfirmEditDebt or ModalConfirmDeleteDebt
    */
-  const handleBackUserDebtList = useCallback(() => {
+  const handleBack = useCallback(() => {
     setDebtId('');
-    setShowModal(modals.MODAL_USER_DEBT_LIST);
+    setShowModal(modals.NO_MODAL);
   }, []);
 
   /** Executes on click confirm delete Debt */
@@ -335,12 +335,12 @@ const MockUp: React.FC = () => {
       />
       <ModalConfirmEditDebt
         isOpen={showModal === modals.MODAL_CONFIRM_EDIT_DEBT && true}
-        onClickCancel={handleBackUserDebtList}
+        onClickCancel={handleBack}
         onClickConfirm={handleClickConfirmEditDebt}
       />
       <ModalConfirmDeleteDebt
         isOpen={showModal === modals.MODAL_CONFIRM_DELETE_DEBT && true}
-        onClickCancel={handleBackUserDebtList}
+        onClickCancel={handleBack}
         onClickConfirm={handleConfirmDeleteDebt}
       />
       <ModalSearchDebt
