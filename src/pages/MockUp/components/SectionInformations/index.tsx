@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
-import { FaInfoCircle, FaReact, FaRegWindowMinimize } from 'react-icons/fa';
+import {
+  FaGithub,
+  FaInfoCircle,
+  FaReact,
+  FaRegWindowMinimize,
+} from 'react-icons/fa';
 import { FiMaximize2 } from 'react-icons/fi';
 import { SiStyledComponents, SiTypescript } from 'react-icons/si';
 
@@ -13,12 +18,11 @@ const SectionInformations: React.FC = () => {
       <div className="div-title">
         <h2>Teste Code7</h2>
         <button type="button" onClick={() => setIsMinimized(!isMinimized)}>
-          {isMinimized ? <FiMaximize2 /> : <FaRegWindowMinimize /> }
+          {isMinimized ? <FiMaximize2 /> : <FaRegWindowMinimize />}
           {' '}
         </button>
       </div>
       <div className="div-introduction">
-
         <p>
           Desafio proposto pela empresa Code7 com o propósito de avaliação de
           candidato.
@@ -34,8 +38,8 @@ const SectionInformations: React.FC = () => {
         <p>
           <strong>
             <FaInfoCircle />
-            Cadastrar uma nova dívida relacionada a um usuário
-            da api JSONPlaceHolder
+            Cadastrar uma nova dívida relacionada a um usuário da api
+            JSONPlaceHolder
           </strong>
         </p>
         <p>
@@ -59,40 +63,40 @@ const SectionInformations: React.FC = () => {
         </p>
       </div>
 
+      <p>Tecnologias utilizadas.</p>
       <p>
-        Tecnologias utilizadas.
-      </p>
-      <p>
-
         <strong>
           <SiTypescript color="#0984e3" />
           {' '}
           Typescript
         </strong>
-
       </p>
 
       <p>
-
         <strong>
           <FaReact color="#6c5ce7" />
           {' '}
           React-JS
         </strong>
-
       </p>
       <p>
-
         <strong>
           <SiStyledComponents color="#e84393" />
           {' '}
           Styled-Components
         </strong>
-
       </p>
 
-    </Section>
+      <p style={{ margin: '8px 0' }}>Link do Projeto:</p>
 
+      <p>
+        <strong>
+          <FaGithub color="#000" />
+          {' '}
+          <a href="https://github.com/carlosrodrigues94/code7-test-application.git" rel="">Git-Hub/carlosrodrigues94</a>
+        </strong>
+      </p>
+    </Section>
   );
 };
 
